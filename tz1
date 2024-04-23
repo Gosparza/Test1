@@ -1,0 +1,11 @@
+
+c=0
+for v in $(find $1 -type 'f')
+do 
+let "c++"
+cp $v $2/$c-$(basename "$v")
+done
+
+
+
+
